@@ -56,7 +56,7 @@ public class ConcurrencyTest {
                     log.info("Exception", e.getMessage());
                 }
 
-                // 没执行一次，减一
+                // 每执行一次，减一
                 cdl.countDown();
             });
         }
